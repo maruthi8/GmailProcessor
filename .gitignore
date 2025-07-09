@@ -1,0 +1,7 @@
+venv
+.DS_Store
+.idea
+client_credentials.json
+emails.db
+token.json
+*/__pycache__/*

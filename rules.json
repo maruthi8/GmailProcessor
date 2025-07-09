@@ -1,0 +1,38 @@
+{
+  "rules": [
+    {
+      "name": "Process Interview Emails",
+      "description": "Mark interview emails as read",
+      "predicate": "all",
+      "conditions": [
+        {
+          "field": "subject",
+          "operator": "contains",
+          "value": "Interview"
+        }
+      ],
+      "actions": [
+        {
+          "type": "mark_as_read"
+        }
+      ]
+    },
+    {
+      "name": "Process Google Account Emails",
+      "description": "Mark Google account emails as read",
+      "predicate": "all",
+      "conditions": [
+        {
+          "field": "from",
+          "operator": "contains",
+          "value": "google"
+        }
+      ],
+      "actions": [
+        {
+          "type": "mark_as_read"
+        }
+      ]
+    }
+  ]
+}
