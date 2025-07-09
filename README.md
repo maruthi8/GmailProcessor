@@ -39,12 +39,13 @@ This Task implements a rule-based email processing system that:
 - Gmail account
 - Google Cloud Project with Gmail API enabled
 - Internet connection
+- Get credentials from Google cloud console
 
 ## Installation
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/maruthi8/GmailProcessor.git)
 cd gmail-email-processor
 ```
 
@@ -52,35 +53,6 @@ cd gmail-email-processor
 ```bash
 pip install -r requirements.txt
 ```
-
-### 3. Google Cloud Setup
-
-#### 3.1 Create Google Cloud Project
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project or select existing one
-3. Enable billing (required for API usage)
-
-#### 3.2 Enable Gmail API
-1. Navigate to "APIs & Services" > "Library"
-2. Search for "Gmail API"
-3. Click "Enable"
-
-#### 3.3 Configure OAuth Consent Screen
-1. Go to "APIs & Services" > "OAuth consent screen"
-2. Choose "Get Started" user type
-3. Fill in required information:
-   - App name: "Gmail Email Processor"
-   - User support email: Your email
-   - Developer contact email: Your email
-4. Add test users (your Gmail address)
-5. Save and continue through all steps
-
-#### 3.4 Create OAuth Credentials
-1. Go to "APIs & Services" > "Credentials"
-2. Click "Create Credentials" > "OAuth 2.0 Client ID"
-3. Choose "Desktop application"
-4. Download the JSON file
-5. Save as `credentials.json` in project root
 
 ## Configuration
 
