@@ -126,26 +126,6 @@ python main.py
 3. Grant permissions for Gmail access
 4. The system will process emails according to your rules
 
-## Database Schema
-
-The system uses SQLite with the following schema:
-
-```sql
-CREATE TABLE emails (
-    id TEXT PRIMARY KEY,
-    thread_id TEXT,
-    from_email TEXT,
-    to_email TEXT,
-    subject TEXT,
-    body TEXT,
-    date_received TEXT,
-    is_read BOOLEAN,
-    labels TEXT,
-    snippet TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
 ## Security
 
 - **OAuth 2.0**: Secure authentication with Google
