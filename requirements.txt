@@ -2,3 +2,8 @@ google-auth  # Core authentication library for Google services
 google-auth-oauthlib  # OAuth 2.0 flow implementation for Google APIs
 google-auth-httplib2  # HTTP transport adapter for Google authentication
 google-api-python-client  # Official Google API client library
+
+# test requirements
+pytest==7.4.3
+pytest-mock==3.12.0
+pytest-cov==4.1.0
