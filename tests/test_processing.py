@@ -3,7 +3,6 @@ import json
 import tempfile
 import os
 from unittest.mock import Mock, patch
-from processor.database import EmailDatabase
 from processor.rules import RuleEngine
 from processor.actions import EmailActions
 
